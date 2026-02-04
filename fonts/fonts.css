@@ -7,6 +7,7 @@
     url(./Inter-Variable.woff2) format("woff2-variations");
   font-weight: 400 785;
   font-display: swap;
+  font-stretch: 100%;
 }
 @font-face {
   font-family: "PressStart2P";
@@ -14,4 +15,5 @@
     url(./PressStart2P-Regular.woff) format("woff2-variations");
   font-weight: 400 785;
   font-display: swap;
+  font-stretch: 100%;
 }
