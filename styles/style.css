@@ -20,7 +20,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   background-size: cover;
-  font-variation-settings: "wgth" 410;
+  font-variation-settings: "wgth" 410, "wdth" 100;
   background-image: repeating-linear-gradient(90deg, #d3d3d3, #d3d3d300 2px),
     repeating-linear-gradient(#d3d3d3, #d3d3d300 2px),
     linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
@@ -44,14 +44,14 @@
   text-transform: uppercase;
   font-size: 65px;
   font-family: var(--font-pressStart), sans-serif;
-  font-variation-settings: "wgth" 400;
+  font-variation-settings: "wgth" 400, "wdth" 100;
 }
 .text_logo {
   text-align: center;
   font-size: 23px;
   text-transform: uppercase;
   font-family: var(--font-pressStart), sans-serif;
-  font-variation-settings: "wgth" 400;
+  font-variation-settings: "wgth" 400, "wdth" 100;
 }
 
 .main {
@@ -70,7 +70,7 @@
   letter-spacing: 100%;
   font-size: 18px;
   font-family: var(--font-inter), sans-serif;
-  font-variation-settings: "wgth" 710;
+  font-variation-settings: "wgth" 710, "wdth" 100;
   margin-inline-start: 9px;
   margin-block-start: 5px;
   margin-block-end: 5px;
@@ -88,7 +88,7 @@
 .img_layball {
   position: absolute;
   font-family: var(--font-pressStart), sans-serif;
-  font-variation-settings: "wgth" 400;
+  font-variation-settings: "wgth" 400, "wdth" 100;
   font-size: 14px;
   mix-blend-mode: hard-light;
   right: 25px;
@@ -130,7 +130,7 @@
   margin-block-start: 10px;
   font-size: 14px;
   font-family: var(--font-pressStart), sans-serif;
-  font-variation-settings: "wgth" 400;
+  font-variation-settings: "wgth" 400, "wdth" 100;
 }
 .card__icon-button {
   margin-inline-end: 6px;
@@ -162,7 +162,7 @@
   padding-inline-start: 5px;
   font-size: 14px;
   font-family: var(--font-pressStart), sans-serif;
-  font-variation-settings: "wgth" 400;
+  font-variation-settings: "wgth" 400, "wdth" 100;
 }
 
 .dialog {
@@ -184,7 +184,7 @@
   font-size: 14px;
   text-transform: uppercase;
   font-family: var(--font-pressStart), sans-serif;
-  font-variation-settings: "wgth" 400;
+  font-variation-settings: "wgth" 400, "wdth" 100;
   line-height: 150%;
 }
 .button_dialog {
@@ -201,7 +201,7 @@
   font-size: 14px;
   text-transform: uppercase;
   font-family: var(--font-pressStart), sans-serif;
-  font-variation-settings: "wgth" 400;
+  font-variation-settings: "wgth" 400, "wdth" 100;
 }
 .dialog[open]::backdrop {
   backdrop-filter: brightness(30%);
