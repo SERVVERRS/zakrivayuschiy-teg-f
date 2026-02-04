@@ -217,10 +217,6 @@
   .text_logo {
     font-size: 14px;
   }
-  .dialog {
-    margin: auto;
-    inline-size: 375px;
-  }
   .main {
     margin-block-start: 101px;
     inline-size: 100%;
@@ -236,8 +232,6 @@
   }
   .button_main_block {
     margin-block-end: 25px;
-  }
-  .button_main_block {
     margin-block-start: 25px;
     margin-inline-end: 25px;
   }
@@ -266,6 +260,8 @@
     padding-inline-start: 0;
   }
   .dialog {
+    margin: auto;
+    inline-size: 375px;
     padding-inline-start: 35px;
     padding-inline-end: 35px;
   }
