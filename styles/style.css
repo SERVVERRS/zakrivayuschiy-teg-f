@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   background-size: cover;
-  font-variation-settings: normal;
+  font-variation-settings: 400;
   background-image: repeating-linear-gradient(90deg, #d3d3d3, #d3d3d300 2px),
     repeating-linear-gradient(#d3d3d3, #d3d3d300 2px),
     linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
