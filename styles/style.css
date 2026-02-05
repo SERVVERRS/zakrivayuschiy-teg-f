@@ -73,7 +73,6 @@
 .title_main_block {
   letter-spacing: 100%;
   font-size: 18px;
-  font-family: var(--font-inter), sans-serif;
   font-variation-settings: "wgth" 710, "wdth" 100;
   margin-inline-start: 9px;
   margin-block-start: 5px;
