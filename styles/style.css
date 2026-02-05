@@ -9,7 +9,11 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
-
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--font-inter), sans-serif;
+  }
+}
 .page {
   display: flex;
   align-items: center;
