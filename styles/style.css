@@ -11,7 +11,7 @@
 */
 @supports (font-variation-settings: normal) {
   .page {
-    font-family: var(--font-inter), sans-serif;
+    font-family: var(--main-fon), sans-serif;
   }
 }
 .page {
@@ -19,9 +19,7 @@
   align-items: center;
   flex-direction: column;
   background-position: center;
-  background-attachment: fixed;
-  font-family: var(--font-inter), sans-serif;
-  min-inline-size: 320px;
+  font-family: var(--main-fon), sans-serif;
   min-block-size: 100dvb;
   background-size: cover;
   font-variation-settings: "wgth" 410, "wdth" 100;
@@ -33,9 +31,10 @@
 .header {
   display: flex;
   margin-block-start: 100px;
-  background-color: var(--Themes-background);
+  background-color: var(--themes-background);
   border: 2px solid var(--color-border-page);
   inline-size: var(--inline-size-block);
+  max-inline-size: 700px;
 }
 
 .logo_group {
@@ -46,16 +45,14 @@
 .title_logo {
   margin-block-end: 19px;
   text-transform: uppercase;
-  font-size: 65px;
-  font-family: var(--font-pressStart), sans-serif;
-  font-variation-settings: "wgth" 400, "wdth" 100;
+  font-size: 4.4vw;
+  font-family: var(--accent-font), sans-serif;
 }
 .text_logo {
   text-align: center;
-  font-size: 23px;
+  font-size: 1.6vw;
   text-transform: uppercase;
-  font-family: var(--font-pressStart), sans-serif;
-  font-variation-settings: "wgth" 400, "wdth" 100;
+  font-family: var(--accent-font), sans-serif;
 }
 
 .main {
@@ -65,13 +62,13 @@
   align-items: center;
   margin-block-start: 97px;
   inline-size: var(--inline-size-block);
+  max-inline-size: 700px;
 }
 .main_block {
-  background-color: var(--Themes-background);
+  background-color: var(--themes-background);
   border: 2px solid var(--color-border-page);
 }
 .title_main_block {
-  letter-spacing: 100%;
   font-size: 18px;
   font-variation-settings: "wgth" 710, "wdth" 100;
   margin-inline-start: 9px;
@@ -85,25 +82,22 @@
   border-block-end: 2px solid var(--color-border-page);
 }
 .img_main_block {
+  object-fit: cover;
   inline-size: 100%;
-  max-block-size: 695px;
+  aspect-ratio: 1 / 1;
 }
 .img_layball {
+  opacity: 0.5;
   position: absolute;
-  font-family: var(--font-pressStart), sans-serif;
-  font-variation-settings: "wgth" 400, "wdth" 100;
+  font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   mix-blend-mode: hard-light;
   right: 25px;
-  top: 27px;
-  text-shadow: -1px 0 var(--layball-color-stroke),
-    0 1px var(--layball-color-stroke), 1px 0 var(--layball-color-stroke),
-    0 -1px var(--layball-color-stroke);
+  top: 23px;
 }
-@supports (text-stroke: 4px var(--layball-color-stroke)) {
-  span {
-    text-stroke: 4px var(--layball-color-stroke);
-    text-shadow: none;
+@supports (-webkit-text-stroke: 1px var(--layball-color-stroke)) {
+  .img_layball {
+    -webkit-text-stroke: 1px var(--layball-color-stroke);
   }
 }
 .text_main_block {
@@ -126,26 +120,27 @@
 }
 .card__like-button {
   inline-size: 130px;
+  padding-block-start: 6px;
+  padding-block-end: 6px;
   border: 2px solid var(--color-border-page);
   text-align: center;
 }
 .button__text {
   margin-block-start: 10px;
   font-size: 14px;
-  font-family: var(--font-pressStart), sans-serif;
-  font-variation-settings: "wgth" 400, "wdth" 100;
+  font-family: var(--accent-font), sans-serif;
 }
 .card__icon-button {
   margin-inline-end: 6px;
-  block-size: 36px;
+  block-size: 32px;
   border: none;
   background: none;
   padding: 1px;
+  margin-block-start: 2px;
 }
 .like-icon {
-  block-size: 34px;
+  block-size: 32px;
   inline-size: 36px;
-  transform-origin: center;
 }
 .button_save {
   border: 2px solid var(--color-border-page);
@@ -163,9 +158,8 @@
 .text_save {
   padding-block-start: 5px;
   padding-inline-start: 5px;
-  font-size: 14px;
-  font-family: var(--font-pressStart), sans-serif;
-  font-variation-settings: "wgth" 400, "wdth" 100;
+  font-size: 0.98vw;
+  font-family: var(--accent-font), sans-serif;
 }
 
 .dialog {
@@ -184,10 +178,9 @@
   inline-size: 75%;
   padding-block-start: 11px;
   padding-inline-start: 20.5px;
-  font-size: 14px;
+  font-size: 0.98vw;
   text-transform: uppercase;
-  font-family: var(--font-pressStart), sans-serif;
-  font-variation-settings: "wgth" 400, "wdth" 100;
+  font-family: var(--accent-font), sans-serif;
   line-height: 150%;
 }
 .button_dialog {
@@ -203,8 +196,7 @@
 .text_button_dialog {
   font-size: 14px;
   text-transform: uppercase;
-  font-family: var(--font-pressStart), sans-serif;
-  font-variation-settings: "wgth" 400, "wdth" 100;
+  font-family: var(--accent-font), sans-serif;
 }
 .dialog[open]::backdrop {
   backdrop-filter: brightness(30%);
@@ -270,6 +262,7 @@
     inline-size: 32px;
   }
   .text_save {
+    font-size: 14px;
     padding-block-start: 4px;
     padding-inline-start: 0;
   }
